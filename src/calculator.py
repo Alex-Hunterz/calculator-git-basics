@@ -33,6 +33,17 @@ def divide(a, b):
     print(f"Result: {result}")
     return result
 
+def modulo(a, b):
+    """Does a modulo b with enhanced error handling."""
+    if b == 0:
+        raise ValueError(f"Cannot do {a} modulo by zero - division by zero is undefined")
+    
+    print(f"Dividing {a} modul  {b}")  # Added logging
+    result = a % b
+    print(f"Result: {result}")
+    return result
+
+
 # TODO: Students will add multiply, divide, power, sqrt functions
 
 if __name__ == "__main__":
